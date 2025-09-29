@@ -115,7 +115,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted, watch, nextTick } from 'vue'
 import { marked } from 'marked'
 import hljs from 'highlight.js'
 
