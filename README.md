@@ -6,7 +6,7 @@
 
 1. 克隆项目仓库：
    ```bash
-   git clone https://github.com/your-username/vite-study-raid.git
+   git clone https://github.com/wumacms/vite-study-raid.git
    ```
 
 2. 进入项目目录：
