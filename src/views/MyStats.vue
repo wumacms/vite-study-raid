@@ -3,7 +3,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">
+                <a href="/" class="logo">
                     <i class="fas fa-graduation-cap"></i>
                     StudyRaid
                 </a>
@@ -21,7 +21,7 @@
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="搜索课程...">
                     </div>
-                    <div class="user-avatar">JS</div>
+                    <a href="/profile" class="user-avatar">JS</a>
                 </div>
             </nav>
         </div>
@@ -60,7 +60,7 @@
                         <i class="fas fa-user"></i>
                         <span>个人信息</span>
                     </router-link>
-                    <router-link to="/my-stat" class="menu-item" :class="{ active: activeMenu === 'stats' }"
+                    <router-link to="/my-stats" class="menu-item" :class="{ active: activeMenu === 'stats' }"
                         @click.prevent="setActiveMenu('stats')">
                         <i class="fas fa-chart-line"></i>
                         <span>学习统计</span>

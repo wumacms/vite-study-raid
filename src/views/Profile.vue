@@ -3,7 +3,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo">
+                <a href="/" class="logo">
                     <i class="fas fa-graduation-cap"></i>
                     StudyRaid
                 </a>

@@ -4,7 +4,7 @@
         <header>
             <div class="container">
                 <nav class="navbar">
-                    <a href="#" class="logo">
+                    <a href="/" class="logo">
                         <i class="fas fa-graduation-cap"></i>
                         StudyRaid
                     </a>
@@ -58,8 +58,8 @@
                             <span v-html="getProgressText(course.progress)"></span>
                         </div>
                         <div class="course-actions">
-                            <a href="#" @click="handleCourseStart(course)" class="btn btn-primary">{{
-                                getButtonText(course.progress) }}</a>
+                            <button class="btn btn-primary" @click="handleCourseStart(course)">{{
+                                getButtonText(course.progress) }}</button>
                             <button class="btn btn-secondary" @click="toggleBookmark(course.id)">
                                 <i :class="course.isBookmarked ? 'fas fa-bookmark' : 'far fa-bookmark'"></i>
                             </button>

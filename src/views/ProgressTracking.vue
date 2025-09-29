@@ -22,7 +22,7 @@
                             <i class="fas fa-search"></i>
                             <input type="text" placeholder="搜索课程..." v-model="searchQuery">
                         </div>
-                        <div class="user-avatar">{{ userInitials }}</div>
+                        <a href="/profile" class="user-avatar">{{ userInitials }}</a>
                     </div>
                 </nav>
             </div>

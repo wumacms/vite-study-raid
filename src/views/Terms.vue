@@ -23,7 +23,7 @@
                             <input type="text" placeholder="搜索课程..." v-model="searchQuery"
                                 @keypress.enter="handleSearch">
                         </div>
-                        <div class="user-avatar">JS</div>
+                        <a href="/profile" class="user-avatar">JS</a>
                     </div>
                 </nav>
             </div>

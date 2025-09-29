@@ -138,8 +138,13 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
+
+// 获取路由实例
+const router = useRouter()
+
 
 // 响应式数据
 const searchTerm = ref('')
@@ -239,8 +244,20 @@ const toggleFaq = (index) => {
 }
 
 const handleCategoryClick = (categoryId) => {
-    alert(`跳转到 ${categoryId} 帮助页面`)
     // 实际应用中这里会跳转到对应的帮助页面
+    if (categoryId === 'getting-started') {
+        // 跳转到入门指南页面
+        router.push({ name: 'GettingStarted' })
+    } else if (categoryId === 'courses') {
+        // 跳转到课程学习页面
+        router.push({ name: 'CoursePlay' })
+    } else if (categoryId === 'account') {
+        // 跳转到账户管理页面
+        router.push({ name: 'Account' })
+    } else if (categoryId === 'technical') {
+        // 跳转到技术问题页面
+        router.push({ name: 'Technical' })
+    }
 }
 
 const handleSearch = () => {

@@ -3,7 +3,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">
+                <a href="/" class="logo">
                     <i class="fas fa-graduation-cap"></i>
                     StudyRaid
                 </a>
@@ -21,7 +21,7 @@
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="搜索课程..." v-model="searchTerm" @input="handleSearch">
                     </div>
-                    <div class="user-avatar">JS</div>
+                    <a href="/profile" class="user-avatar">JS</a>
                 </div>
             </nav>
         </div>

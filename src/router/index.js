@@ -93,12 +93,21 @@ const routes = [
         name: 'CoursePlay',
         component: () => import('../views/CoursePlay.vue'),
     },
+    {
+        path: '/getting-started',
+        name: 'GettingStarted',
+        component: () => import('../views/GettingStarted.vue'),
+    },
 ]
 
 // 创建 router 实例
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL), // Vite 推荐用 import.meta.env.BASE_URL
     routes,
+    scrollBehavior(to, from, savedPosition) {
+        // 每次进入新页面时，强制滚动到顶部
+        return { left: 0, top: 0 }
+    }
 })
 
 export default router
